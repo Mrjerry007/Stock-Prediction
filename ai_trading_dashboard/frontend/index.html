@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Trading Dashboard</title>
+  <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div>
+        <h1>AI Trading Dashboard</h1>
+        <p>Live market data, technical indicators, ML predictions, and alerts.</p>
+      </div>
+      <div class="controls">
+        <input id="ticker" type="text" value="AAPL" placeholder="Enter ticker (AAPL, MSFT, TSLA)" />
+        <button id="loadBtn">Load</button>
+      </div>
+    </header>
+
+    <section class="cards">
+      <div class="card">
+        <h3>Current Price</h3>
+        <div id="currentPrice" class="big">—</div>
+      </div>
+      <div class="card">
+        <h3>Predicted Next Close</h3>
+        <div id="predictedPrice" class="big">—</div>
+      </div>
+      <div class="card">
+        <h3>Direction</h3>
+        <div id="direction" class="big">—</div>
+      </div>
+      <div class="card">
+        <h3>Confidence</h3>
+        <div id="confidence" class="big">—</div>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="panel large">
+        <div class="panel-head">
+          <h2>Price Chart</h2>
+          <span id="modelUsed">—</span>
+        </div>
+        <div id="chart"></div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-head">
+          <h2>Prediction Interval</h2>
+        </div>
+        <div id="interval" class="text-block">—</div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-head">
+          <h2>Alerts</h2>
+        </div>
+        <div id="alerts" class="alerts"></div>
+      </div>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

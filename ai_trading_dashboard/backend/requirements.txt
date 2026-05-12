@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+yfinance
+pandas
+numpy
+plotly
+scikit-learn
+xgboost
+tensorflow
+joblib
+ta
+python-multipart
+websockets
