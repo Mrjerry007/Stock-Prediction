@@ -1,5 +1,8 @@
 # Stock Prediction!
 
+<img width="1920" height="1080" alt="Screenshot 2026-05-12 190438" src="https://github.com/user-attachments/assets/3413c5d3-2628-4a53-ad06-46dfccbbe05c" />
+
+
 # AI Trading Dashboard
 
 A full-stack Python project with:
